@@ -1,0 +1,140 @@
+@use './mixins' as *;
+@use './utils.scss' as *;
+
+a {
+  color: $ColorText;
+  text-decoration: none;
+}
+
+a.hover {
+  border: none !important;
+}
+
+.App {
+  // display: flex;
+  // flex-direction: column;
+  text-align: center;
+  color: $ColorText;
+
+  overflow-x: hidden;
+}
+
+.MobileMenu {
+  position: absolute;
+  transform: translateX(-100%);
+  transition: linear 500ms all;
+
+  z-index: 7;
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  @media (min-width: 451px) {
+    display: none;
+  }
+}
+
+.elips_wrapper {
+  height: 0;
+}
+
+.Elipse {
+  z-index: 6;
+  position: relative;
+
+  &__Elipse--one {
+    position: relative;
+    top: 18vh;
+    left: -10vw;
+
+    @media (max-width: 450px) {
+      top: 65vh;
+    }
+
+    &--size {
+      @include circle(220px);
+
+      @media (max-width: 800px) {
+        @include circle(100px);
+      }
+
+      @media (max-width: 450px) {
+        @include circle(60px);
+      }
+    }
+  }
+
+  &__Elipse--two {
+    top: 20vh;
+    left: 90vw;
+
+    @media (max-width: 800px) {
+      top: 70vh;
+      left: 60vw;
+    }
+
+    &--size {
+      @include circle(220px);
+
+      @media (max-width: 800px) {
+        @include circle(100px);
+      }
+
+      @media (max-width: 450px) {
+        @include circle(60px);
+      }
+    }
+  }
+
+  &__Elipse--three {
+    top: 150vh;
+    left: 68vw;
+
+    @media (max-width: 800px) {
+      top:  215vh;
+      left: 30vw;
+    }
+
+    @media (max-width: 450px) {
+      top: 258vh;
+      left: 34%;
+    }
+
+    &--size {
+      @include circle(220px);
+
+      @media (max-width: 800px) {
+        @include circle(100px);
+      }
+
+      @media (max-width: 450px) {
+        @include circle(60px);
+      }
+    }
+  }
+  &__Elipse--four {
+    top: 164vh;
+    left: 83vw;
+
+    @media (max-width: 800px) {
+      top: 199vh;
+    }
+
+    @media (max-width: 450px) {
+      top: 225vh;
+    }
+
+    &--size {
+      @include circle(150px);
+
+      @media (max-width: 800px) {
+        @include circle(100px);
+      }
+
+      @media (max-width: 450px) {
+        @include circle(60px);
+      }
+    }
+  }
+}

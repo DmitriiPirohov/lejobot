@@ -1,0 +1,27 @@
+@use '../../utils.scss' as *;
+@use '../../mixins' as *;
+
+.Button {
+  position: absolute;
+  color: $backcolorFirst;
+  top: 80vh;
+  left: 6vw;
+  padding: 20px 80px;
+  border: 1px solid $purpureColor;
+  border-radius: 12px;
+
+  background: linear-gradient(0.25turn, #00538E 0%, #9753A8 78%);
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    padding: 12px 60px;
+    top: 84vh;
+    left: 50vw;
+  }
+
+  @media (max-width: 450px) {
+    padding: 10px 40px;
+    top: 54vh;
+    left: 20%;
+  }
+}

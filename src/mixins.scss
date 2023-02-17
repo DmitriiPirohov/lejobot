@@ -1,0 +1,26 @@
+@use './utils' as *;
+
+@mixin circle($size) {
+  height: $size;
+  width: $size;
+
+  border: 50px solid;
+
+  border-radius: 50%;
+
+  opacity: 0.1;
+
+  @media (max-width: 450px) {
+    border: 25px solid;
+  }
+}
+
+@mixin logoDescTop($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin  squere($size) {
+  width: $size;
+  height: $size;
+}

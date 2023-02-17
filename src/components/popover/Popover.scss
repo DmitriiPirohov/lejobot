@@ -1,0 +1,47 @@
+@use '../../utils.scss' as *;
+@use '../../mixins' as *;
+
+.Popover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+
+  width: 400px;
+  height: 450px;
+
+  position: absolute;
+  top: 680vh;
+  left: 20vw;
+  z-index: 6;
+
+  background-color: $purpureColor;
+  border-radius: 12px;
+
+  @media (max-width: 800px) {
+    top: 740vh;
+    left: 0vw;
+
+    width: 100%;
+  }
+
+  @media (max-width: 450px) {
+
+  }
+
+  &__text {
+    width: 300px;
+  }
+
+  &__button {
+    padding: 20px 80px;
+    border: 1px solid $purpureColor;
+    border-radius: 12px;
+    color: $backcolorFirst;
+
+    background: linear-gradient(0.25turn, #00538E 0%, #9753A8 78%);
+    cursor: pointer;
+  }
+
+}
