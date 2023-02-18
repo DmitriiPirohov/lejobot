@@ -10,15 +10,15 @@ export const BasicTextFields = () => {
   return (
     <div className='box0'>
       <Box
-        component="form"
-        className='box1'
+        // component="form"
+
         sx={ {
           '& > :not(style)': { m: 1 },
         } }
         noValidate
         autoComplete="off"
       >
-        <TextField id="outlined-basic" variant="outlined" sx={ { backgroundColor: 'white', borderRadius: 2 } } placeholder='+ xxx xxx xxx' />
+        <TextField className='box1' id="outlined-basic" variant="outlined" sx={ { backgroundColor: 'white', borderRadius: 2 } } placeholder='+ xxx xxx xxx' />
       </Box>
     </div>
   );

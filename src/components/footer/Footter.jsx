@@ -60,8 +60,18 @@ export const Footter = () => {
 
       </div>
       <div className='footer__adress'>
-        <div>Rue Abbé Cuypers 3, 1040 Etterbee</div>
-        <span>info@dds-corp.com</span>
+        <div className="footer__adress-text">
+          <div>Rue Abbé Cuypers 3, 1040 Etterbee</div>
+          <span>info@dds-corp.com</span>
+        </div>
+
+        <a href="#">
+          <img
+            src={ logo3 }
+            alt="logo"
+            className='footer__logo-mobile'
+          />
+        </a>
       </div>
 
     </div>

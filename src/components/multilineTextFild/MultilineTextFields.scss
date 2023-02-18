@@ -1,0 +1,23 @@
+.multiline-box {
+  width: 280px;
+
+  @media (max-width: 800px) {
+
+  }
+
+  @media (max-width: 450px) {
+    width: 92%;
+  }
+}
+
+.multiline-item {
+  width: 280px;
+
+  @media (max-width: 800px) {
+
+  }
+
+  @media (max-width: 450px) {
+    width: 92%;
+  }
+}

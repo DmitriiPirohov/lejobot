@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import './MultilineTextFields.scss'
 
 // import * as React from 'react';
 // import Box from '@mui/material/Box';
@@ -10,14 +11,16 @@ export const MultilineTextFields = () => {
     <Box
       component="form"
       sx={ {
-        '& .MuiTextField-root': { m: 0, width: '27ch' },
+        '& .MuiTextField-root': { m: 0},
       } }
       noValidate
       autoComplete="off"
+      className='multiline-box'
     >
       <div>
         <TextField
           id="outlined-multiline-static"
+          className='multiline-item'
           label=""
           multiline
           rows={ 4 }

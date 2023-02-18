@@ -64,6 +64,34 @@
 
     @media (max-width: 450px) {
       font-size: 8px;
+      padding: 5px 50px 0 0;
+    }
+  }
+
+  &__adress-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (max-width: 800px) {
+
+    }
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+      text-align: left;
+      width: 50%;
+    }
+  }
+
+  &__logo-mobile{
+    @include squere(20px);
+    padding: 2px 20px 0 0;
+
+    @media (min-width: 451px) {
+      display: none;
+
     }
   }
 
@@ -137,6 +165,11 @@
       margin: 0;
       padding: 5;
       width: 70%;
+
+      font-size: 15px;
+    }
+    @media (max-width: 350px) {
+      font-size: 11px;
     }
   }
 
@@ -168,6 +201,10 @@
       display: flex;
       flex-direction: row-reverse;
       justify-content: left;
+
+      padding: 7px 0 0 0;
+
+      width: 82%;
     }
   }
 
@@ -196,16 +233,14 @@
   &__checkbox{
     display: flex;
     flex-direction: row;
-    // width: 300px;
-    width: inherit;
+    width: 300px;
 
     @media (max-width: 800px) {
 
     }
 
     @media (max-width: 450px) {
-      // width: 0px;
-      // height: ;
+      width: 200px;
     }
   }
 
