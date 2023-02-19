@@ -13,15 +13,40 @@
   background: linear-gradient(0.25turn, #00538E 0%, #9753A8 78%);
   cursor: pointer;
 
-  @media (max-width: 800px) {
+
+  @media (max-width: 913px) {
     padding: 12px 60px;
-    top: 84vh;
-    left: 50vw;
+    top: 35vh;
+    left: 10vw;
+  }
+  @media (max-width: 650px) {
+    padding: 12px 60px;
+    top: 40vh;
+    left: 16vw;
   }
 
   @media (max-width: 450px) {
     padding: 10px 40px;
     top: 54vh;
     left: 20%;
+  }
+
+  z-index: 5;
+}
+
+.cont {
+  // transition-duration: all 4s;
+  transition-timing-function: ease-in-out 500ms;
+
+
+  :hover {
+    // transform: scaleY(1.2);
+    transition-duration: 500ms;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+  }
+  :active {
+    // transform: scaleY(1.2);
+    transition-duration: 500ms;
+    box-shadow: none;
   }
 }

@@ -7,8 +7,7 @@
   color: $backcolorFirst;
   overflow: hidden;
 
-  @media (max-width: 800px) {
-
+  @media (max-width: 913px) {
   }
 
   @media (max-width: 450px) {
@@ -27,7 +26,7 @@
 
     // width: 550px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -43,8 +42,10 @@
     text-align: center;
     align-items: center;
 
-    @media (max-width: 800px) {
+    box-sizing: border-box !important;
+    width: 200px !important;
 
+    @media (max-width: 913px) {
     }
 
     @media (max-width: 450px) {
@@ -58,7 +59,7 @@
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.34);
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -74,7 +75,7 @@
     justify-content: space-between;
     width: 100%;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -102,8 +103,16 @@
     padding: 45px 40px;
     gap: 1px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
+      // margin-left: 100px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
 
+    @media (max-width: 913px) {
+      padding: 1px;
     }
 
     @media (max-width: 450px) {
@@ -124,7 +133,7 @@
       @include squere(90px);
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -139,8 +148,13 @@
     justify-content: end;
     text-align-last: left;
     gap: 30px;
-    @media (max-width: 800px) {
 
+    :hover {
+      color: $purpureColor;
+    }
+
+    @media (max-width: 913px) {
+      display: none;
     }
 
     @media (max-width: 450px) {
@@ -157,8 +171,8 @@
 
     width: 200px;
 
-    @media (max-width: 800px) {
-
+    @media (max-width: 913px) {
+      display: none;
     }
 
     @media (max-width: 450px) {
@@ -177,7 +191,7 @@
     display: flex;
     flex-direction: row;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -193,7 +207,7 @@
     justify-content: space-between;
     margin-left: 7px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -220,7 +234,7 @@
     font-size: 20px;
     color: $backcolorFirst;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -235,7 +249,7 @@
     flex-direction: row;
     width: 300px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -248,7 +262,7 @@
     width: 25px;
     height: 25px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -263,7 +277,7 @@
   }
 
   &__checkbox-text {
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
 
     }
 
@@ -272,5 +286,16 @@
       padding: 5px;
       width: 100px;
     }
+  }
+}
+
+.send-container {
+  :hover {
+    border-color: $purpureColor;
+    color: $purpureColor;
+  }
+  :active {
+    border-color: $backcolorFirst;
+    color: $backcolorFirst;
   }
 }

@@ -19,7 +19,7 @@
   background-color: $purpureColor;
   border-radius: 12px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 913px) {
     top: 740vh;
     left: 0vw;
 
@@ -29,6 +29,8 @@
   @media (max-width: 450px) {
 
   }
+
+
 
   &__text {
     width: 300px;
@@ -42,6 +44,16 @@
 
     background: linear-gradient(0.25turn, #00538E 0%, #9753A8 78%);
     cursor: pointer;
+  }
+
+  &__cont-for-button {
+    :hover {
+      border: 1px solid $backcolorFirst
+    }
+
+    :active {
+      background: linear-gradient(0.25turn, #00538E 0%, #9753A8 98%);
+    }
   }
 
 }

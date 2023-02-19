@@ -1,0 +1,15 @@
+.MobileMenu {
+  position: absolute;
+  transform: translateX(-100%);
+  transition: linear 500ms all;
+
+  z-index: 7;
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  @media (min-width: 451px) {
+    display: none;
+  }
+}

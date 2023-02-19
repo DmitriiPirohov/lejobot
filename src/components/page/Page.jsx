@@ -3,10 +3,27 @@ import simple from '../../images/simple.png';
 import { useState } from 'react';
 import * as React from 'react';
 import { Popover } from '../popover/Popover';
+import { PropTypes } from 'prop-types';
 
 import './Page.scss'
 
 export const Page = ({ idName, backColor, name, picture, elipse = [], h1, text, pictureName, head, icons = [], cards, backicons = [], work = [] }) => {
+  Page.prototypes = {
+    idName: PropTypes.string,
+    backColor: PropTypes.string,
+    name: PropTypes.string,
+    picture: PropTypes.string,
+    elipse: PropTypes.array,
+    icons: PropTypes.array,
+    cards: PropTypes.array,
+    backicons: PropTypes.array,
+    work: PropTypes.array,
+    h1: PropTypes.string,
+    text: PropTypes.string,
+    pictureName: PropTypes.string,
+    head: PropTypes.string,
+  }
+
   const [active, SetActive] = useState(false);
   const [title, SetTitle] = useState('');
   const [paragraph, SetParagraph] = useState('');
@@ -96,7 +113,7 @@ export const Page = ({ idName, backColor, name, picture, elipse = [], h1, text, 
         }
 
         { picture &&
-          <div className={ classNames(`${pictureName}`) }>
+          <div className={ classNames(`${pictureName}`, (pictureName === 'Brains') && 'jello center') }>
             <img src={ picture } alt="head" className={ classNames(`${pictureName}__picture pc`) } />
           </div> }
 
@@ -113,9 +130,9 @@ export const Page = ({ idName, backColor, name, picture, elipse = [], h1, text, 
 
         { (work) &&
           <div className='work'>
-            { work.map((elem) => (
-              <div key={ elem } className='work__position'>
-                <label htmlFor="work">
+            { work.map((elem, i) => (
+              <div key={ i } className='work__position'>
+                <label htmlFor="work" className='lable-botton'>
                   <p className={ classNames('work__title') }>
                     { elem.split('*')[0] }
                     <button
@@ -137,32 +154,3 @@ export const Page = ({ idName, backColor, name, picture, elipse = [], h1, text, 
     </>
   );
 };
-
-// const Elipse = ({ elipse = [] }) => {
-//   return (
-
-//     <>
-//       { (elipse.length > 0) &&
-//         <>
-//           { elipse.map((klass) => (
-//             <div key={ klass }>
-//               <div className='Wrapper-for-elipse'>
-//                 <div key={ klass } className={ classNames(`Elipse ${klass}`) }></div>
-//               </div>
-
-//             </div>
-//           )) }
-//         </>
-//       }
-//     </>
-
-//   )
-// }
-
-
-// {
-//   (elipse.length > 0) &&
-//   <div className='elipse-wrapper'>
-//     {/* <Elipse elipse={elipse}/> */}
-//   </div>
-// }

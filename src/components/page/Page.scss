@@ -1,6 +1,11 @@
 @use '../../utils.scss' as *;
 @use '../../mixins' as *;
 
+$popravka7pageIphoneXR: 34vh;
+$popravka7pageIphone12pro: 23vh;
+$popravka7pageIphoneSE: -18vh;
+$popravka7pagePixel: 23vh;
+
 .Page {
   height: 100vh;
 
@@ -11,7 +16,7 @@
   height: 100vh;
   overflow: hidden;
 
-  @media (max-width: 800px) {}
+  @media (max-width: 913px) {}
 
   @media (max-width: 450px) {
     height: 110vh;
@@ -34,19 +39,24 @@
     text-align: left;
     font-size: 70px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       top: 15vh;
       left: 90px;
-      font-size: 30px;
+      font-size: 40px;
       width: 500px;
+    }
+
+    @media (max-width: 650px) {
+      width: 400px;
     }
 
     @media (max-width: 450px) {
       top: 15vh;
       left: 90px;
-      font-size: 30px;
+      font-size: 25px;
       width: 60%;
     }
+
     @media (max-width: 360px) {
       top: 15vh;
       left: 55px;
@@ -64,8 +74,8 @@
     font-size: 25px;
     text-align: left;
 
-    @media (max-width: 800px) {
-      top: 25vh;
+    @media (max-width: 913px) {
+      top: 30vh;
       left: 90px;
       font-size: 14px;
     }
@@ -102,11 +112,18 @@
 
   overflow: hidden;
 
-  @media (max-width: 800px) {
-    top: -10vh;
-    left: -12vw;
+  @media (max-width: 913px) {
+    top: 30vh;
+    left: -18vw;
 
     scale: 0.5;
+  }
+
+  @media (max-width: 650px) {
+    top: 30vh;
+    left: -40vw;
+
+    scale: 0.4;
   }
 
   @media (max-width: 450px) {
@@ -115,6 +132,7 @@
 
     scale: 0.23;
   }
+
   @media (max-width: 350px) {
     top: 8vh;
     left: -21rem;
@@ -134,10 +152,16 @@
     height: 600px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 913px) {
     scale: 0.75;
-    top: 15vh;
-    left: 16vw;
+    top: 40vh;
+    left: 4vw;
+  }
+
+  @media (max-width: 650px) {
+    scale: 0.6;
+    top: 44vh;
+    left: -5vw;
   }
 
   @media (max-width: 450px) {
@@ -163,7 +187,7 @@
 
     opacity: 0.9;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       height: 100vh;
       width: 100%;
 
@@ -195,7 +219,7 @@
 
     z-index: 1;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       top: 125vh;
       left: 15%;
       width: 450px;
@@ -240,14 +264,16 @@
     text-align: left;
     // font-size: 70px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       width: 350px;
-      padding: 120px 0 0 50px;
+      padding: 250px 0 0 50px;
+
     }
 
     @media (max-width: 450px) {
       width: 90%;
       padding: 120px 0 0 20px;
+      font-size: 28px;
     }
 
     @media (max-width: 350px) {
@@ -270,7 +296,7 @@
     font-size: 22px;
     text-align: justify;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       width: 350px;
 
       top: 245vh;
@@ -283,6 +309,7 @@
       top: 248vh;
       left: 20px;
     }
+
     @media (max-width: 350px) {
       width: 80%;
 
@@ -304,12 +331,16 @@
 
     opacity: 0.9;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       top: 265vh;
-      left: 53vw;
+      left: 65vw;
 
       height: 300px;
       width: 300px;
+    }
+
+    @media (max-width: 650px) {
+      left: 45vw;
     }
 
     @media (max-width: 450px) {
@@ -345,7 +376,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       margin-left: 10px;
     }
 
@@ -363,7 +394,7 @@
     display: flex;
     flex-direction: row;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       gap: 0px;
       padding: 0;
       margin: 10px;
@@ -382,7 +413,7 @@
 
     animation: partners-translate-down infinite 80s linear;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       @include squere(100px);
       margin: 0 0 10px 10px;
 
@@ -390,7 +421,13 @@
     }
 
     @media (max-width: 450px) {
-      margin-top: -550px;
+      margin-top: -620px;
+
+      animation: partners-translate-right infinite 30s linear;
+    }
+
+    @media (max-width: 376px) {
+      margin-top: -590px;
 
       animation: partners-translate-right infinite 30s linear;
     }
@@ -405,7 +442,7 @@
 
       animation: partners-translate-up infinite 80s linear;
 
-      @media (max-width: 800px) {
+      @media (max-width: 913px) {
         @include squere(100px);
         margin: 0 0 10px 10px;
 
@@ -426,7 +463,7 @@
     @include squere(100px);
     padding: 85px 0 0 0;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       @include squere(50px);
       padding: 25px 0 0 0;
     }
@@ -535,7 +572,7 @@
     font-size: 70px;
     color: $backcolorFirst;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       font-size: 30px;
       top: 320vh;
       left: 40vw;
@@ -543,9 +580,16 @@
       width: 320px;
     }
 
+    @media (max-width: 650px) {
+      font-size: 20px;
+      top: 320vh;
+      left: 50vw;
+      width: 250px;
+    }
+
     @media (max-width: 450px) {
       width: 80%;
-      font-size: 27px;
+      font-size: 22px;
       top: 375vh;
       left: 13%;
 
@@ -570,11 +614,20 @@
     text-align: left;
     color: $backcolorFirst;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       width: 320px;
 
       top: 345vh;
       left: 40vw;
+
+      font-size: 20px;
+    }
+
+    @media (max-width: 650px) {
+      width: 250px;
+
+      top: 345vh;
+      left: 50vw;
 
       font-size: 20px;
     }
@@ -624,9 +677,9 @@
     &--1 {
       font-size: 220px;
 
-      @media (max-width: 800px) {
+      @media (max-width: 913px) {
         position: absolute;
-        top: -70%;
+        top: -60%;
         left: -165%;
 
         margin-left: 10px;
@@ -648,7 +701,7 @@
       font-size: 50px;
       color: $purpureColor;
 
-      @media (max-width: 800px) {
+      @media (max-width: 913px) {
         position: absolute;
         top: 10%;
         left: -160%;
@@ -671,9 +724,9 @@
     &--3 {
       font-size: 220px;
 
-      @media (max-width: 800px) {
+      @media (max-width: 913px) {
         position: absolute;
-        top: -70%;
+        top: -60%;
         left: -30%;
 
         margin-left: 10px;
@@ -696,7 +749,7 @@
       font-size: 50px;
       color: $purpureColor;
 
-      @media (max-width: 800px) {
+      @media (max-width: 913px) {
         position: absolute;
         top: 10%;
         left: -25%;
@@ -722,7 +775,7 @@
     font-size: 25px;
     text-align: left;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       position: absolute;
       top: 465vh;
       left: 10%;
@@ -743,7 +796,7 @@
   height: 130vh;
 
   @media (max-width: 450px) {
-    height: 165vh;
+    height: 160vh;
   }
 
   &__cards {
@@ -757,7 +810,7 @@
 
     width: max-content;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       width: 90%;
       grid: repeat(1, 1fr);
       gap: 7px;
@@ -765,15 +818,24 @@
       top: 540vh;
     }
 
-    @media (max-width: 450px) {
-      top: 550vh;
-      // margin-left: 150px;
-      // width: 250px;
+    @media (max-width: 650px) {
+      grid: repeat(1, 1fr);
+      gap: 15px;
+
+      top: 540vh;
     }
+
+    // @media (max-width: 450px) {
+    //   top: 550vh;
+    //   width: 250px;
+    //   // margin-left: 150px;
+    //   // width: 250px;
+    // }
+
     @media (max-width: 450px) {
       top: 550vh;
       margin-left: 10px;
-      // width: 250px;
+      width: 95%;
     }
   }
 
@@ -786,7 +848,7 @@
     border: 1px solid $purpureColor;
     border-radius: 12px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       width: 80%;
       height: 130px;
       margin-left: 25px;
@@ -794,25 +856,29 @@
       &:nth-child(4) {
         display: none;
       }
+
       &:nth-child(5) {
         display: none;
       }
+
       &:nth-child(6) {
         display: none;
       }
     }
 
-    @media (max-width: 450px) {
-      width: 50%;
+    @media (max-width: 650px) {
+      margin-left: 10px;
+      width: 70%;
       height: max-content;
     }
 
-     @media (max-width: 450px) {
-      width: 45%;
+    @media (max-width: 450px) {
+      width: 60%;
       height: max-content;
       margin: 8px 0 0 20px;
     }
-     @media (max-width: 350px) {
+
+    @media (max-width: 350px) {
       width: 70%;
       height: max-content;
       margin-left: 5px;
@@ -840,14 +906,15 @@
 
   &__info {
     text-align: left;
+    font-size: 12px;
 
     @media (max-width: 450px) {
-      width: 60%;
+      width: 90%;
       // height: max-content;
     }
 
     @media (max-width: 350px) {
-      width: 100%;
+      width: 90%;
       font-size: 12px;
     }
 
@@ -858,6 +925,16 @@
       font-size: 28px;
       font-weight: 600;
 
+      @media (max-width: 650px) {
+        width: 70%;
+        font-size: 20px;
+      }
+
+      @media (max-width: 450px) {
+        width: 70%;
+        font-size: 20px;
+      }
+
       @media (max-width: 350px) {
         width: 40%;
         font-size: 20px;
@@ -866,6 +943,10 @@
 
     &--text {
       margin-top: 10px;
+
+      @media (max-width: 450px) {
+        width: 100%;
+      }
     }
   }
 
@@ -881,7 +962,7 @@
     text-align: left;
     font-size: 40px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
       top: 510vh;
       left: 90px;
 
@@ -891,9 +972,9 @@
     }
 
     @media (max-width: 450px) {
-      top: 528vh;
+      top: 529vh;
       left: 25px;
-      font-size: 25px;
+      font-size: 22px;
     }
 
     @media (max-width: 350px) {
@@ -923,8 +1004,32 @@
   //   z-index: 1;
   // }
 
+  @media (max-width: 913px) {
+    height: 80vh;
+  }
+
   @media (max-width: 450px) {
+    height: 120vh;
+  }
+
+  @media (max-width: 420px) {
     height: 110vh;
+  }
+
+  @media (max-width: 401px) {
+    height: 175vh;
+  }
+
+  @media (max-width: 399px) {
+    height: 120vh;
+  }
+
+  @media (max-width: 376px) {
+    height: 175vh;
+  }
+
+  @media (max-width: 301px) {
+    height: 120vh;
   }
 
   &__h1 {
@@ -943,15 +1048,52 @@
       color: $purpureColor;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 913px) {
+      top: 600vh;
+      left: 10vw;
     }
 
+    @media (max-width: 650px) {}
+
     @media (max-width: 450px) {
-      top: 689vh;
+      top: 720vh;
       left: 5px;
 
       font-size: 30px;
     }
+
+    @media (max-width: 415px) {
+      top: 728vh - $popravka7pageIphoneXR;
+      left: 5px;
+
+      font-size: 30px;
+    }
+
+    @media (max-width: 413px) {
+      top: 667vh;
+      left: 5px;
+
+      font-size: 30px;
+    }
+
+    @media (max-width: 401px) {
+      top: 720vh;
+      left: 5px;
+
+      font-size: 30px;
+    }
+
+    // @media (max-width: 394px) {
+    //   top: 720vh -$popravka7pageIphone12pro;
+    // }
+    @media (max-width: 394px) {
+      top: 720vh -$popravka7pageIphone12pro;
+    }
+
+    @media (max-width: 376px) {
+      top: 720vh -$popravka7pageIphoneSE;
+    }
+
     @media (max-width: 350px) {
       top: 680vh;
       left: 5px;
@@ -981,17 +1123,54 @@
 
   z-index: 5;
 
-  @media (max-width: 800px) {
-    // display: none;
-  }
-
-  @media (max-width: 450px) {
-    left: 65vw;
-    top: 711vh;
+  @media (max-width: 913px) {
+    top: 635vh;
+    left: 55vw;
 
     width: 80px;
     height: 80px;
   }
+
+  @media (max-width: 650px) {
+    top: 628vh;
+    left: 60vw;
+
+    width: 80px;
+    height: 80px;
+  }
+
+  @media (max-width: 450px) {
+    top: 740vh;
+    left: 65vw;
+
+    width: 80px;
+    height: 80px;
+  }
+
+  @media (max-width: 415px) {
+    top: 740vh - $popravka7pageIphoneXR;
+  }
+
+  @media (max-width: 413px) {
+    top: 691vh;
+    left: 65vw;
+
+    width: 80px;
+    height: 80px;
+  }
+
+  @media (max-width: 401px) {
+    top: 740vh;
+  }
+
+  @media (max-width: 394px) {
+    top: 740vh -$popravka7pageIphone12pro;
+  }
+
+  @media (max-width: 376px) {
+    top: 740vh -$popravka7pageIphoneSE;
+  }
+
   @media (max-width: 350px) {
     left: 65vw;
     top: 711vh;
@@ -1010,13 +1189,35 @@
   height: 120px;
 
   z-index: 5;
-  @media (max-width: 800px) {
-    // display: none;
+
+  @media (max-width: 913px) {
+    top: 640vh;
+    left: 48vw;
+
+    width: 80px;
+    height: 140px;
+
+  }
+
+  @media (max-width: 650px) {
+    top: 635vh;
   }
 
   @media (max-width: 450px) {
     left: 50vw;
-    top: 725vh;
+    top: 759vh;
+
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (max-width: 415px) {
+    top: 759vh - $popravka7pageIphoneXR;
+  }
+
+  @media (max-width: 413px) {
+    left: 50vw;
+    top: 699vh;
 
     width: 80px;
     height: 140px;
@@ -1025,7 +1226,20 @@
     height: 60px;
   }
 
+  @media (max-width: 401px) {
+    top: 759vh;
+  }
+
+  @media (max-width: 394px) {
+    top: 759vh -$popravka7pageIphone12pro;
+  }
+
+  @media (max-width: 376px) {
+    top: 759vh -$popravka7pageIphoneSE;
+  }
+
   @media (max-width: 350px) {
+    top: 719vh;
     width: 30px;
     height: 30px;
   }
@@ -1040,19 +1254,55 @@
   height: 120px;
 
   z-index: 5;
-  @media (max-width: 800px) {
-    // display: none;
+
+  @media (max-width: 913px) {
+    left: 24vw;
+    top: 634vh;
+
+    width: 80px;
+    height: 140px;
+  }
+
+  @media (max-width: 650px) {
+    top: 622vh;
   }
 
   @media (max-width: 450px) {
     left: 17vw;
-    top: 715vh;
+    top: 749vh;
 
     width: 80px;
     height: 140px;
 
     width: 60px;
     height: 60px;
+  }
+
+  @media (max-width: 415px) {
+    top: 749vh - $popravka7pageIphoneXR;
+  }
+
+  @media (max-width: 413px) {
+    left: 17vw;
+    top: 687vh;
+
+    width: 80px;
+    height: 140px;
+
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (max-width: 401px) {
+    top: 749vh;
+  }
+
+  @media (max-width: 394px) {
+    top: 749vh -$popravka7pageIphone12pro;
+  }
+
+  @media (max-width: 376px) {
+    top: 749vh -$popravka7pageIphoneSE;
   }
 
   @media (max-width: 350px) {
@@ -1071,8 +1321,21 @@
 
   width: 400px;
   height: 800px;
-  @media (max-width: 800px) {
-    // display: none;
+
+  @media (max-width: 913px) {
+    left: 15vw;
+    top: 630vh;
+
+    width: 250px;
+    height: 380px;
+  }
+
+  @media (max-width: 650px) {
+    left: 15vw;
+    top: 618vh;
+
+    width: 200px;
+    height: 330px;
   }
 
   @media (max-width: 450px) {
@@ -1083,12 +1346,28 @@
     height: 330px;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 415px) {
+    top: 745vh - $popravka7pageIphoneXR;
+  }
+
+  @media (max-width: 413px) {
     left: 1vw;
-    top: 705vh;
+    top: 685vh;
 
     width: 120px;
     height: 200px;
+  }
+
+  @media (max-width: 401px) {
+    top: 745vh;
+  }
+
+  @media (max-width: 394px) {
+    top: 745vh -$popravka7pageIphone12pro;
+  }
+
+  @media (max-width: 376px) {
+    top: 745vh -$popravka7pageIphoneSE;
   }
 
   @media (max-width: 350px) {
@@ -1107,16 +1386,54 @@
 
   width: 500px;
   height: 500px;
-  @media (max-width: 800px) {
-    // display: none;
+
+  @media (max-width: 913px) {
+    left: 43vw;
+    top: 630vh;
+
+    width: 240px;
+    height: 350px;
+  }
+
+  @media (max-width: 650px) {
+    left: 43vw;
+    top: 622vh;
+
+    width: 240px;
+    height: 350px;
   }
 
   @media (max-width: 450px) {
     left: 45vw;
-    top: 705vh;
+    top: 735vh;
 
     width: 200px;
     height: 330px;
+  }
+
+  @media (max-width: 415px) {
+    top: 735vh - $popravka7pageIphoneXR;
+
+  }
+
+  @media (max-width: 413px) {
+    left: 45vw;
+    top: 685vh;
+
+    width: 200px;
+    height: 330px;
+  }
+
+  @media (max-width: 401px) {
+    top: 735vh;
+  }
+
+  @media (max-width: 394px) {
+    top: 735vh -$popravka7pageIphone12pro;
+  }
+
+  @media (max-width: 376px) {
+    top: 735vh -$popravka7pageIphoneSE;
   }
 
   @media (max-width: 350px) {
@@ -1135,19 +1452,57 @@
 
   width: 200px;
   height: 200px;
-  @media (max-width: 800px) {
-    // display: none;
+
+  @media (max-width: 913px) {
+    left: 55vw;
+    top: 650vh;
+
+    width: 110px;
+    height: 160px;
+  }
+
+  @media (max-width: 650px) {
+    left: 63vw;
+    top: 645vh;
+
+    width: 110px;
+    height: 160px;
   }
 
   @media (max-width: 450px) {
     left: 72vw;
-    top: 730vh;
+    top: 768vh;
 
     width: 80px;
     height: 140px;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 415px) {
+    top: 768vh - $popravka7pageIphoneXR;
+  }
+
+  @media (max-width: 413px) {
+    left: 72vw;
+    top: 710vh;
+
+    width: 80px;
+    height: 140px;
+  }
+
+  @media (max-width: 401px) {
+    top: 768vh;
+
+  }
+
+  @media (max-width: 394px) {
+    top: 768vh -$popravka7pageIphone12pro;
+  }
+
+  @media (max-width: 376px) {
+    top: 768vh -$popravka7pageIphoneSE;
+  }
+
+  @media (max-width: 350px) {
     left: 59vw;
     top: 724vh;
 
@@ -1164,19 +1519,47 @@
   width: 250px;
   height: 250px;
 
-  @media (max-width: 800px) {
-    // display: none;
+  @media (max-width: 913px) {
+    top: 656vh;
+    left: 27vw;
+
+    width: 100px;
+    height: 160px;
+  }
+
+  @media (max-width: 650px) {
+    top: 640vh;
   }
 
   @media (max-width: 450px) {
-    left: 21vw;
-    top: 739vh;
+    top: 768vh - $popravka7pageIphoneXR;
+  }
+
+  @media (max-width: 413px) {
+    top: 700vh;
+    left: 14vw;
 
     width: 80px;
     height: 140px;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 401px) {
+    top: 768vh;
+    left: 14vw;
+
+    width: 80px;
+    height: 140px;
+  }
+
+  @media (max-width: 394px) {
+    top: 768vh -$popravka7pageIphone12pro;
+  }
+
+  @media (max-width: 376px) {
+    top: 768vh -$popravka7pageIphoneSE;
+  }
+
+  @media (max-width: 350px) {
     left: 18vw;
     top: 725vh;
 
@@ -1190,18 +1573,47 @@
   top: 720vh;
   left: 6vw;
 
-  @media (max-width: 800px) {
-    top: 780vh;
+  @media (max-width: 913px) {
+    top: 680vh;
+  }
+
+  @media (max-width: 650px) {
+    // top: 780vh;
   }
 
   @media (max-width: 450px) {
-    top: 760vh;
+    top: 800vh;
+  }
+
+  @media (max-width: 415px) {
+    top: 800vh - $popravka7pageIphoneXR;
+  }
+
+  @media (max-width: 413px) {
+    top: 735vh;
+  }
+
+  @media (max-width: 401px) {
+    top: 800vh;
+  }
+
+  @media (max-width: 394px) {
+    top: 800vh -$popravka7pageIphone12pro;
+  }
+
+  @media (max-width: 376px) {
+    top: 800vh -$popravka7pageIphoneSE;
+  }
+
+  @media (max-width: 301px) {
+    top: 740vh;
   }
 
   &__position {
     width: 200px;
     height: 40px;
     overflow-y: hidden;
+
   }
 
   &__title {
@@ -1226,4 +1638,56 @@
 
     cursor: pointer;
   }
+
+  :hover {
+    scale: 0.97;
+  }
+}
+
+@keyframes jello {
+  11.1% {
+    transform: none
+  }
+
+  22.2% {
+    transform: skewX(-8.5deg) skewY(-1.5deg) translateX(-30px);
+  }
+
+  33.3% {
+    transform: skewX(4.25deg) skewY(4.25deg) translateX(10px);
+  }
+
+  44.4% {
+    transform: skewX(-15.125deg) skewY(-5.125deg) translateX(-20px);
+  }
+
+  55.5% {
+    transform: skewX(5.5625deg) skewY(5.5625deg) translateX(10px);
+  }
+
+  66.6% {
+    transform: skewX(-4.78125deg) skewY(-4.78125deg) translateX(-10px);
+  }
+
+  77.7% {
+    transform: skewX(3.390625deg) skewY(3.390625deg) translateX(10px);
+  }
+
+  88.8% {
+    transform: skewX(-2.1953125deg) skewY(-2.1953125deg) translateX(-10px);
+  }
+
+  100% {
+    transform: none
+  }
+}
+
+.jello {
+  animation: jello 3s infinite;
+  transform-origin: center;
+
+}
+
+.center {
+  display: inline-block;
 }

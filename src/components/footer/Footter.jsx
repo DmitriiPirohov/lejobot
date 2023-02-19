@@ -48,11 +48,15 @@ export const Footter = () => {
             <MultilineTextFields />
 
             <span className='footer__confirm-block'>
-              <button className='footer__form_send'>Send</button>
+              <div className='send-container'>
+                <button className='footer__form_send' style={ { cursor: 'pointer' } }>Send</button>
+              </div>
 
               <span className='footer__checkbox'>
-                <input className='footer__checkbox-sponge' type="checkbox" />
-                <span className='footer__checkbox-text'>I agree to the privacy policy and terms of use</span>
+                <input className='footer__checkbox-sponge' type="checkbox" id='privacy' style={ { cursor: 'pointer' } } />
+                <label htmlFor="privacy" style={ { cursor: 'pointer' } }>
+                  <span className='footer__checkbox-text'>I agree to the privacy policy and terms of use</span>
+                </label>
               </span>
             </span>
           </div>
