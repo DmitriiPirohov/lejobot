@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lejobot/static/css/main.476fec5e.css",
-    "main.js": "/lejobot/static/js/main.9bc1b3e4.js",
+    "main.css": "/lejobot/static/css/main.94adc534.css",
+    "main.js": "/lejobot/static/js/main.bf063f3a.js",
     "static/media/grupMap.svg": "/lejobot/static/media/grupMap.1fbaa67cec4f220ec5cd.svg",
     "static/media/2.svg": "/lejobot/static/media/2.98d0cfa607a25fcd482571bd1cc7d6a8.svg",
     "static/media/sevenLeftCircle.svg": "/lejobot/static/media/sevenLeftCircle.b995b53bcd90ec53726631e55f9378f9.svg",
@@ -22,11 +22,11 @@
     "static/media/head.svg": "/lejobot/static/media/head.c86a4bf172662d5a38c22874a5e32985.svg",
     "static/media/line.svg": "/lejobot/static/media/line.5b19c89e130e88ddd5c7.svg",
     "index.html": "/lejobot/index.html",
-    "main.476fec5e.css.map": "/lejobot/static/css/main.476fec5e.css.map",
-    "main.9bc1b3e4.js.map": "/lejobot/static/js/main.9bc1b3e4.js.map"
+    "main.94adc534.css.map": "/lejobot/static/css/main.94adc534.css.map",
+    "main.bf063f3a.js.map": "/lejobot/static/js/main.bf063f3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.476fec5e.css",
-    "static/js/main.9bc1b3e4.js"
+    "static/css/main.94adc534.css",
+    "static/js/main.bf063f3a.js"
   ]
 }
