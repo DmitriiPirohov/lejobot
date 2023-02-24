@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/lejobot/static/css/main.58619eaf.css",
-    "main.js": "/lejobot/static/js/main.b2c8dfcf.js",
+    "main.css": "/lejobot/static/css/main.476fec5e.css",
+    "main.js": "/lejobot/static/js/main.9bc1b3e4.js",
+    "static/media/grupMap.svg": "/lejobot/static/media/grupMap.1fbaa67cec4f220ec5cd.svg",
+    "static/media/2.svg": "/lejobot/static/media/2.98d0cfa607a25fcd482571bd1cc7d6a8.svg",
     "static/media/sevenLeftCircle.svg": "/lejobot/static/media/sevenLeftCircle.b995b53bcd90ec53726631e55f9378f9.svg",
-    "static/media/backPic3.svg": "/lejobot/static/media/backPic3.b5c3905d562dd5c8fd735d6049ce7d5d.svg",
+    "static/media/backPic3.svg": "/lejobot/static/media/backPic3.0317677a0b1c0c1d821fb23882b691c2.svg",
     "static/media/sevenMidleCircle.svg": "/lejobot/static/media/sevenMidleCircle.5515d59898a3a588e0e9d761a6c96fb9.svg",
     "static/media/pageTwoBack.png": "/lejobot/static/media/pageTwoBack.a94a943e31120a8c76e4.png",
     "static/media/sevenRightCircle.svg": "/lejobot/static/media/sevenRightCircle.f3675b28a60bcf388f77bb6f5052ea65.svg",
@@ -18,12 +20,13 @@
     "static/media/america2.svg": "/lejobot/static/media/america2.ae98bfc293e2ce94643306b7e6d6f85f.svg",
     "static/media/australia.svg": "/lejobot/static/media/australia.9b2db4bd1b43db161049dc6252641e79.svg",
     "static/media/head.svg": "/lejobot/static/media/head.c86a4bf172662d5a38c22874a5e32985.svg",
+    "static/media/line.svg": "/lejobot/static/media/line.5b19c89e130e88ddd5c7.svg",
     "index.html": "/lejobot/index.html",
-    "main.58619eaf.css.map": "/lejobot/static/css/main.58619eaf.css.map",
-    "main.b2c8dfcf.js.map": "/lejobot/static/js/main.b2c8dfcf.js.map"
+    "main.476fec5e.css.map": "/lejobot/static/css/main.476fec5e.css.map",
+    "main.9bc1b3e4.js.map": "/lejobot/static/js/main.9bc1b3e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.58619eaf.css",
-    "static/js/main.b2c8dfcf.js"
+    "static/css/main.476fec5e.css",
+    "static/js/main.9bc1b3e4.js"
   ]
 }
